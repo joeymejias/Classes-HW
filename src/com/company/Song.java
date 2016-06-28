@@ -18,6 +18,11 @@ public class Song {
         mAlbumName = albumName;
     }
 
+    public void play(){
+        System.out.println("Now playing: " + mSongName + "by " + mArtistName + "from " + mAlbumName);
+    }
+
+    //Bonus
     public void setSongName(){
         mSongName = scanner.nextLine();
     }
@@ -28,9 +33,5 @@ public class Song {
 
     public void setmAlbumName(){
         mAlbumName = scanner.nextLine();
-    }
-
-    public void play(){
-        System.out.println(mSongName + mArtistName + mAlbumName);
     }
 }

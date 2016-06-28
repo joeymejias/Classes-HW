@@ -13,10 +13,6 @@ public class Playlist{
 
     Scanner scanner = new Scanner(System.in);
 
-    public Playlist(){
-        super();
-    }
-
     public Playlist(String name){
         mName = name;
         mSongs = new ArrayList<>();

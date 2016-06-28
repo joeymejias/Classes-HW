@@ -23,9 +23,12 @@ public class Main {
         user1.addPlaylist(playlist1);
         user1.addPlaylist(playlist2);
 
-        System.out.println(user1.getAllPlaylistNames().keySet());
+        System.out.println(user1.getAllPlaylistNames());
         System.out.println(user1.getPlaylistByName("playlist"));
+
+        System.out.println(playlist1.getName());
         playlist1.playAll();
+        System.out.println(playlist2.getName());
         playlist2.playAll();
 
         System.out.println("Song Name:");

@@ -1,9 +1,6 @@
 package com.company;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Created by joey on 6/27/16.
@@ -23,8 +20,11 @@ public class User{
         mPlaylists.put(playlist.getName(),playlist);
     }
 
-    public HashMap getAllPlaylistNames(){
-        return mPlaylists;
+    public Set<String>
+
+    getAllPlaylistNames(){
+        System.out.print("playlists: ");
+        return mPlaylists.keySet();
     }
 
     public Playlist getPlaylistByName(String name){
